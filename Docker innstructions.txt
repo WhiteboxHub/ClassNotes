@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------------------
+Download Docker desktop from the link: https://www.docker.com/get-started/
+
+1. Open command prompt or Terminal & check if docker is installed: docker -v
+2. To download our customised MongoDB Docker image: docker pull hkinnovapath/mongodb-classs:latest
+3. To run the Docker container: docker run --name mongo-container -d -p 27017:27017 hkinnovapath/mongodb-classs:latest
+4. (Optional) To List running containers: docker ps
+5. To interact with the MongoDB shell(mongosh) inside container: docker exec -it mongo-container mongosh
+test>: This indicates, we are inside the MongoDB shell i.e., mongosh and connected to the MongoDB instance 
+--------------------------------------------------------------------------------------------
+
+1. Download Visual Studio Code from the link: https://code.visualstudio.com/download
+2. Once downloaded & Installed, Open VS Code and look for extensions button in the left panel
+3. In the extensions search bar, search for 'MongoDB for VS Code and click install
+4. Once installed, click on the MongoDB icon in the left panel(leaf icon)
+5. Click on connect with string and type 'mongodb://localhost:27017' in the search bar at the top and hit enter
+6. Now double click on localhost:27017 in the left panel and it'll be connected. 
+7. Now right click on 'wbl_class_mongo' which you see under localhost:27017 and click on 'Create MongoDB Playground'
+8. Now you can run the commands in MongoDB playground
+--------------------------------------------------------------------------------------------
